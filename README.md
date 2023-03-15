@@ -1,12 +1,13 @@
 # scss--the-net-ninja
 
-# Install Gulp & Sass #
-- in root folder enter = npm install gulp gulp-sass sass --save-dev
-
-# Run Build #
+## Install Gulp & Sass ##
 - Navigate to root directory
-- In root folder enter = "gulp"
+- `npm install gulp gulp-sass sass --save-dev`
 
-# Finished Build #
+## Run Build ##
+- Navigate to root directory
+- `gulp`
+
+### Running ###
 - new css file generated
 - gulp watches your files for further changs and automatically builds css
