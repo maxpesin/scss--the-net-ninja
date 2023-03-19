@@ -5,7 +5,7 @@ const purgecss = require('gulp-purgecss')
 function buildSass() {
     //return src('index.scss')
     //return src('*.scss')
-    return src('clientLibs/**/*.scss')
+    return src('custom/**/*.scss')
     .pipe(sass())
     // used for purgecss plugin
     .pipe(purgecss({ content: ['*.html'] }))
