@@ -1,7 +1,5 @@
-$primary: indigo;
+//$primary: indigo;
+$base-padding: 1rem;
+$base-border-thickness: 3px;
 
 @import 'clientLibs';
-
-.test {
-    margin: 10px;
-}
