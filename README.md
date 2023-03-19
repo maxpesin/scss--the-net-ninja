@@ -1,4 +1,4 @@
-# scss--the-net-ninja
+# [scss--the-net-ninja](https://github.com/iamshaunjp/complete-sass-tutorial)
 
 ## Install Gulp & Sass ##
 - Navigate to root directory
