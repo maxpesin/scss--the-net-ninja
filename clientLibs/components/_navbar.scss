@@ -1,0 +1,31 @@
+// replacing . with % makes this a placeholder styling
+// able to extend, but doesn't output to final stylsheet
+%flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+// using @extend does not pass on an argument
+// use mixin to pass arguments
+.navbar {
+    @extend %flex-layout;
+    padding: $base-padding $base-padding * 2;
+    box-shadow: $base-box-shadow;
+
+    .site-title {
+        font-size: $font-size-lg;
+    }
+    .container {
+        @extend %flex-layout;
+    }
+}
+
+@each $key, $val in $colors {
+    .navbar-#{$key} {
+        @extend .navbar;
+        background-color: $val;
+    }
+}
